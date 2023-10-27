@@ -37,19 +37,23 @@ setTimeout(function() {
 
 /* add função modal video */
 
-$(document).ready(function(){
+jQuery(document).ready(function(){
     
-    $(document).on('click', '.video-wrapper .modal.fade, .video-wrapper .close', function(){
+    jQuery(document).on('click', '.video-wrapper .modal.fade, .video-wrapper .close', function(){
         setTimeout(() => {
-            var video = document.getElementById('video-modal');
-    
-            if(video != null){
-                video.pause();
-                video.currentTime = 0;
+            if(jQuery('#video-modal:visible').length == 0){
+                var video = document.getElementById('video-modal');
+                
+                if(video != null){
+                    video.pause();
+                    video.currentTime = 0;
+                }
             }
-        }, 100);
+        }, 200);
     });
+    
 });
+
 
 
 
