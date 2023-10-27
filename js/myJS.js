@@ -51,8 +51,16 @@ jQuery(document).ready(function(){
             }
         }, 200);
     });
-    
-});
+
+    /* função autoplay no video */
+    jQuery(document).on('click', '.video-wrapper .video-play-button', function(){
+        setTimeout(() => {
+        var video = document.getElementById('video-modal');
+        video.play();
+        }, 100);
+    });
+}); 
+
 
 
 
