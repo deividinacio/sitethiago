@@ -408,11 +408,47 @@
                     <div class="image-container">
                         <div class="video-wrapper">
                             <img class="img-fluid" src="images/video.jpg" alt="alternative">
-                            <a class="popup-youtube" href="video/teste.mp4" data-effect="fadeIn">
-                                <span class="video-play-button">
-                                    <span></span>
-                                </span>
-                            </a>
+                            
+
+                                <a href="#" data-toggle="modal" data-target="#exampleModalCenter" data-effect="fadeIn">
+                                    <span class="video-play-button">
+                                        <span></span>
+                                    </span>
+                                </a>
+                           
+
+<!-- Button trigger modal -->
+
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    Launch demo modal
+  </button>
+  
+  
+
+                           <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <video width="400px" height="300px" controls autoplay>
+                <source src="video/teste.mp4" type="video/mp4">
+            </video>
+                
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
                         </div> <!-- end of video-wrapper -->
                     </div> <!-- end of image-container -->
                     <!-- end of video preview -->
@@ -422,6 +458,7 @@
         </div> <!-- end of container -->
     </div> <!-- end of basic-4 -->
     <!-- end of video -->
+
 
 
 
