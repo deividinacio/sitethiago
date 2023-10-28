@@ -5726,7 +5726,7 @@ a.close.disabled {
 }
 
 .modal {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0;
   left: 0;
