@@ -5928,10 +5928,23 @@ a.close.disabled {
   }
 }
 
+@media (min-width: 689px)
+{
+  .modal-dialog {
+    max-width: 600px;
+    margin: 1.75rem auto;
+  }
+}
+
+
 @media (min-width: 992px) {
   .modal-lg,
   .modal-xl {
     max-width: 800px;
+  }
+  .modal-dialog {
+    max-width: 680px;
+    margin: 1.75rem auto;
   }
 }
 
