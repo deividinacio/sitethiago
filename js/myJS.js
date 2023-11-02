@@ -34,7 +34,6 @@ setTimeout(function() {
 
     }
   
-   
 /* fim bloquei click direito mouse */
 
 /* add função modal video */
@@ -59,14 +58,16 @@ jQuery(document).ready(function(){
                 }
             }
         }, 200);
-            window.location.reload();
+
+        window.location.reload();
     });
 
-    /* função autoplay no video */
+    /* função autoplay no video aluno */
     jQuery(document).on('click', '.video-wrapper .video-play-button', function(){
         setTimeout(() => {
         var video = document.getElementById('video-modal');
         video.play();
+
         document.getElementById('audio').pause(); // pausa musica de background quando clica para iniciar o vídeo
         }, 100);
     });
