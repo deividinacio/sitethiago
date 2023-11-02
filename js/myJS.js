@@ -4,11 +4,13 @@
 
 // Pega o valor numérico da data e hora:
 // formato ano/mes/dia
-var dataEncerramento = (new Date('2024/10/25 16:00:00')).getTime();
+var dataEncerramento = (new Date('2023/11/10 23:59:00')).getTime();
 // Executa a função quando no tempo marcado:
 setTimeout(function() {
     window.location.href = "../404.html"; // direciona para esse página
 }, dataEncerramento - Date.now());
+
+
 
 
 /* add função bloqueio do click direito do mouse no iframe do video - janela pop-up */
@@ -29,27 +31,35 @@ setTimeout(function() {
                 }, 500);
             });
         });
+
     }
   
    
 /* fim bloquei click direito mouse */
 
-
 /* add função modal video */
 
 jQuery(document).ready(function(){
+   
+    /* inicio função play no audio qnd clicar em qlqr lugar da tela */
+    document.addEventListener('click', musicPlay);
+    function musicPlay() {
+        document.getElementById('audio').play();
+        document.removeEventListener('click', musicPlay);
+    } 
+    /* Fim função play no audio*/ 
     
     jQuery(document).on('click', '.video-wrapper .modal.fade, .video-wrapper .close', function(){
         setTimeout(() => {
             if(jQuery('#video-modal:visible').length == 0){
                 var video = document.getElementById('video-modal');
-                
                 if(video != null){
                     video.pause();
                     video.currentTime = 0;
                 }
             }
         }, 200);
+            window.location.reload();
     });
 
     /* função autoplay no video */
@@ -57,10 +67,10 @@ jQuery(document).ready(function(){
         setTimeout(() => {
         var video = document.getElementById('video-modal');
         video.play();
+        document.getElementById('audio').pause(); // pausa musica de background quando clica para iniciar o vídeo
         }, 100);
     });
 }); 
-
 
 
 
