@@ -1484,7 +1484,7 @@ input[type='checkbox'] {
 }
 
 .form-3 h2 {
-	margin-bottom: 1.125rem;
+	margin-bottom: 4rem;
 }
 
 .form-3 p {
@@ -2089,6 +2089,8 @@ a:hover.back-to-top {
 		margin-bottom: 0;
 	}
 	
+
+
 	/* end of contact */
 
 
@@ -2286,3 +2288,15 @@ a:hover.back-to-top {
 	border-radius: 5px;
 	width: 100%;
 }
+
+/* AUDIO */
+
+.play-audio{
+	margin-top: 2rem;
+	text-align: center;
+}
+
+.play-audio audio{
+	display: none; /*esconde do display do audio na tela  */
+}
+
