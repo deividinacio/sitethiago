@@ -11,8 +11,6 @@ setTimeout(function() {
 }, dataEncerramento - Date.now());
 
 
-
-
 /* add função bloqueio do click direito do mouse no iframe do video - janela pop-up */
 
     window.onload = function()

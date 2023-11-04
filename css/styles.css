@@ -264,6 +264,10 @@ a:hover {
 .text-center {
 	text-align: center;
 }
+.basic-1 .text-container {
+	text-align: justify;
+}
+
 
 
 /* IE10+ hack to solve lower label text position compared to the rest of the browsers */
@@ -970,19 +974,23 @@ input[type='checkbox'] {
 	
 	padding-top: 3.75rem;
 	padding-bottom: 3.5rem;
-	
-
 	background-color: #fbf9f5;
 }
 
 .basic-1 h2 {
-	margin-bottom: 1.25rem;
+	margin-bottom: 4rem;
 	margin-top: 4rem;
 }
 
 .basic-1 img {
 	margin-bottom: 2.5rem;
 	border-radius: 0.25rem;
+	width: 500px;
+	height: auto;
+}
+
+.basic-1 p {
+	font-size: 22px;
 }
 
 
@@ -996,7 +1004,7 @@ input[type='checkbox'] {
 }
 
 .basic-2 h2 {
-	margin-bottom: 3.75rem;
+	margin-bottom: 8rem;
 	text-align: center;
 }
 
@@ -1027,13 +1035,14 @@ input[type='checkbox'] {
 /*     09. Students     */
 /************************/
 .basic-3 {
-	padding-top: 2.75rem;
+	padding-top: 4rem;
 	padding-bottom: 4rem;
 	background-color: #fbf9f5;
 }
 
 .basic-3 .text-container {
 	margin-bottom: 3.5rem;
+	
 }
 
 .basic-3 h2 {
@@ -1042,6 +1051,7 @@ input[type='checkbox'] {
 
 .basic-3 p {
 	margin-bottom: 1.375rem;
+	text-align: justify;
 }
 
 .basic-3 img {
@@ -1161,7 +1171,7 @@ input[type='checkbox'] {
 .basic-4 h2 {
 	margin-bottom: 2.75rem;
 	text-align: center;
-	margin-bottom: 6rem;
+	margin-bottom: 9rem;
 }
 /*
 .basic-4 .image-container {
@@ -1319,7 +1329,7 @@ input[type='checkbox'] {
 	margin-top: 6rem;
 }
 
-.slider-2 h3 {
+.slider-2 h2 {
 	margin-top: 4rem;
 	margin-bottom: 6rem;
 	text-align: center;
@@ -1383,7 +1393,8 @@ input[type='checkbox'] {
 /********************/
 .basic-5 {
 	background-color: #fbf9f5;
-	margin-top: 5rem;
+	margin-top: 10rem;
+	margin-bottom: 8rem;
 }
 
 .basic-5 .text-container {
@@ -1469,7 +1480,7 @@ input[type='checkbox'] {
 /*     16. Contact     */
 /***********************/
 .form-3 {
-	padding-top: 6.125rem;
+	padding-top: 4rem;
 	padding-bottom: 5.125rem;
 	background-color: #fbf9f5;
 	
@@ -1599,6 +1610,7 @@ input[type='checkbox'] {
 /*     18. Copyright     */
 /*************************/
 .copyright {
+	margin-top: 12rem;
 	padding-top: 1.5rem;
 	padding-bottom: 0.375rem;
 	background-color: #000;
@@ -1818,6 +1830,16 @@ a:hover.back-to-top {
 		margin-top: 0;
 	}
 	/* end of extra pages */
+
+	/* instructor  */
+
+	.basic-1 .text-container {
+		text-align: justify;
+	}
+
+	/* end of instructor */
+
+
 }
 /* end of min-width width 768px */
 
@@ -1956,6 +1978,7 @@ a:hover.back-to-top {
 	.basic-1 .text-container
 	{
 		margin-top: 6rem;
+		text-align: justify;
 	}
 	/* end of instructor */
 
@@ -1970,7 +1993,7 @@ a:hover.back-to-top {
 
 	/* Students */
 	.basic-3 {
-		padding-top: 3.5rem;
+		padding-top: 6rem;
 		padding-bottom: 4.5rem;
 	}
 
@@ -2029,7 +2052,7 @@ a:hover.back-to-top {
 
 	/* Testimonials */
 	.slider-2 {
-		padding-bottom: 6rem;
+		padding-bottom: 4rem;
 	}
 
 	.slider-2 h3 {
@@ -2157,6 +2180,7 @@ a:hover.back-to-top {
 	.basic-1 .text-container {
 		margin-top: 3.125rem;
 		margin-left: 3.5rem;
+		text-align: justify;
 	}
 	/* end of instructor */
 
@@ -2300,3 +2324,8 @@ a:hover.back-to-top {
 	display: none; /*esconde do display do audio na tela  */
 }
 
+/*  hr */
+
+hr {
+	width: 80%;
+}
