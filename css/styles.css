@@ -1056,7 +1056,16 @@ input[type='checkbox'] {
 
 .basic-3 img {
 	border-radius: 0.25rem;
+	padding-top: 6rem;
 }
+.basic-3 .img-conf{
+	padding-top: 6rem;
+}
+
+.basic-3 .row2{
+	margin-top: 4rem;
+}
+
 
 
 /********************************/
@@ -2198,7 +2207,7 @@ a:hover.back-to-top {
 
 	/* Students */
 	.basic-3 .text-container {
-		margin-top: 2.5rem;
+		/*margin-top: 2.5rem;*/
 		margin-right: 3.5rem;
 	}
 	/* end of instructor */
