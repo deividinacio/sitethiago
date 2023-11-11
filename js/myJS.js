@@ -1,25 +1,21 @@
 
+/* função data de encerramento do site */
 
+    // Pega o valor numérico da data e hora:
+    // formato ano/mes/dia
+    var dataEncerramento = (new Date('2023/11/10 23:59:00')).getTime();
+    // Executa a função quando no tempo marcado:
+    setTimeout(function() {
+        window.location.href = "../404.html"; // direciona para esse página
+    }, dataEncerramento - Date.now());
+
+ /* Fim função data de encerramento do site */
 
 
 /* add função bloqueio do click direito do mouse no iframe do video - janela pop-up */
 
     window.onload = function()
-    {
-
-    /* função data de encerramento do site */
-
-// Pega o valor numérico da data e hora:
-// formato ano/mes/dia
-var dataEncerramento = (new Date('2023/11/10 23:59:00')).getTime();
-// Executa a função quando no tempo marcado:
-setTimeout(function() {
-    window.location.href = "../404.html"; // direciona para esse página
-}, dataEncerramento - Date.now());
-
- /* Fim função data de encerramento do site */
-
-        
+    {        
         document.addEventListener("contextmenu", e => e.preventDefault()); // bloqueia em toda pagina
         $(document).ready(function() {
             $('.video-wrapper').on('click', function(){
